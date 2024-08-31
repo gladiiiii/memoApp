@@ -1,5 +1,6 @@
 import {
-    View, Text, TextInput, StyleSheet
+    View, Text, TextInput, 
+    TouchableOpacity, StyleSheet
 } from 'react-native'
 
 import Header from '../../components/Header'
@@ -16,7 +17,10 @@ const LogIn = (): JSX.Element =>{
                 <Button label='Submit' />
                 <View style={styles.footer}>
                     <Text style={styles.footerText}>Not registere?</Text>
+                    <TouchableOpacity>
                     <Text style={styles.footerLink}>Sign up here!</Text>
+                    </TouchableOpacity>
+                    
                 </View>
                 
             </View>
