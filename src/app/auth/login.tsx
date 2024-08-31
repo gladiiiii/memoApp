@@ -6,6 +6,8 @@ import {
 import Header from '../../components/Header'
 import Button from '../../components/button'
 
+import { Link } from 'expo-router'
+
 const LogIn = (): JSX.Element =>{
     return (
         <View style={styles.conteiner}>
@@ -17,10 +19,11 @@ const LogIn = (): JSX.Element =>{
                 <Button label='Submit' />
                 <View style={styles.footer}>
                     <Text style={styles.footerText}>Not registere?</Text>
-                    <TouchableOpacity>
-                    <Text style={styles.footerLink}>Sign up here!</Text>
-                    </TouchableOpacity>
-                    
+                    <Link href='/auth/sign_up' asChild>
+                        <TouchableOpacity>
+                            <Text style={styles.footerLink}>Sign up here!</Text>
+                        </TouchableOpacity>
+                    </Link>    
                 </View>
                 
             </View>
