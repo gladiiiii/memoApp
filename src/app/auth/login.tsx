@@ -8,7 +8,7 @@ import Button from '../../components/button'
 
 const hundlePress = (): void => {
     // ログイン
-    router.push('/memo/list')
+    router.replace('/memo/list')
 }
 
 const LogIn = (): JSX.Element =>{

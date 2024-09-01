@@ -8,7 +8,7 @@ import Button from '../../components/button'
 
 const hundlePress = (): void => {
     // 会員登録
-    router.push('/memo/list')
+    router.replace('/memo/list')
 }
 
 const SignUp = (): JSX.Element =>{
