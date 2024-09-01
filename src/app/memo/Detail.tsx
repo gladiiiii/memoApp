@@ -24,7 +24,7 @@ const Detail = (): JSX.Element => {
                     本文用なので使い方を間違えると不自然に見えることもありますので要注意
                 </Text>
             </ScrollView>
-            <CircleButton onPress={handlePress} style={{ top:160, bottom:'auto' }}>
+            <CircleButton onPress={handlePress} style={{ top:60, bottom:'auto' }}>
                 <Icon name='pencil' size={40} color='#ffffff' />
             </CircleButton>
         </View>
